@@ -1,0 +1,63 @@
+
+
+<html>
+  <head>
+    <title> alexsName </title>
+    <style>
+      body{
+        background-color: #191A6C;
+      }
+
+      p.info{
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 400px;
+
+      }
+
+      div.info{
+        border: 1px solid grey;
+        border-radius: 5px;
+        background-color: white;
+        width: 400px;
+        margin: auto;
+        text-align: center;
+
+      }
+
+      div.separator{
+        border:2px solid white;
+        background-color: white;
+        width: 1400px;
+        margin: auto;
+        text-align: center;
+
+      }
+
+      h2.header{
+        color: black;
+        text-align: center;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class='separator'>
+      <h2 class='header'>
+        alexsHead
+      </h2>
+      <div class='info'>
+        surveyInfo
+      </div>
+    </div>
+
+    	<form action="/alexsName.php" method="post">
+		fav color<input type="text" name="0"><br>
+		what ur name<input type="text" name="1"><br>
+		<input type="submit">
+	</form>
+
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<?php
+
+    // If the server's method of receiving information is post...
+    // We will be using post in the form rather than get
+    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        $myfile = fopen("!!fileNAME", 'a') or die("invalid file. check input");
+        !!varAndID
+        !!getUserIP
+
+
+    // Checks if the variable is empty. If it isn't, it adds it to $response
+!!addVARIABLESHERE
+    // Close the file
+    fwrite($myfile, "\n");
+    fclose($myfile);
+
+    // Redirects the user to the thankyou page
+    header("Location: /thankyou.html"); /* Redirect browser */
+    exit();
+  }
+?>

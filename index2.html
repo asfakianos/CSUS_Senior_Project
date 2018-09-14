@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title> Welcome to Sfakianos.com </title>
+        <style>
+        div.centeredText{
+            font-size: 30px;
+            font-family: sans-serif;
+            position: absolute;
+            color: white;
+            margin: auto;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+
+                            /* Dropdown Button */
+        .dropbtn {
+            background-color: none;
+            color: white;
+            padding: 16px;
+            font-size: 25px;
+            border: none;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: none;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: none;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: none;
+        }
+
+        .show {
+            display:block;
+        }
+                            /* End Dropdown Button */
+        </style>
+
+    </head>
+    <body background="https://sfakianoscom.000webhostapp.com/indexBG.jpg">
+        <div style="centeredText">
+        Welcome!
+        </div>
+
+        <div class="dropdown">
+          <button onclick="dropIt()" class="dropbtn">Surveys</button>
+          <div id="myDropdown" class="dropdown-content">
+
+            <!-- Goes to the template page -->
+            <a href="/public_html/template.html">Survey1</a>
+            <a href="#">Survey2</a>
+            <a href="#">Survey3</a>
+
+          </div>
+        </div>
+
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function dropIt() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,78 @@
+
+
+<html>
+  <head>
+    <title> surveyTitle </title>
+    <style>
+    div.centeredText{
+        font-size: 10px;
+        font-family: sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+      body{
+        background-color: #134181;
+      }
+
+      p.info{
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 400px;
+
+      }
+
+      div.info{
+        border: 1px solid #97989B;
+        border-radius: 5px;
+        background-color: #D6D6DA;
+        width: 750px;
+        margin: auto;
+        text-align: center;
+        line-height: 150%;
+        box-shadow: 4px 4px 1px #888888;
+
+      }
+
+      div.separator{
+        border: 1px solid #97989B;
+        background-color: #D6D6DA;
+        width: 900px;
+        margin: auto;
+        text-align: center;
+        box-shadow: 4px 4px 1px #888888;
+
+      }
+
+      h2.header{
+        color: black;
+        text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class='separator'>
+      <h2 class='header'>
+        surveyHeader
+      </h2>
+      <div class='info'>
+        surveyInfo
+        surveyForm
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+  </body>
+
+  <footer>
+  <div class="centeredText">
+    <p> Survey Created by !!writtenBy. Code by Alexander Sfakianos. </p>
+    <p> To see data, email Alex: alexander@sfakianos.com </p>
+    </div>
+</html>
